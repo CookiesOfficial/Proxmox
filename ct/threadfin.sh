@@ -57,7 +57,7 @@ header_info
 if [[ ! -d /opt/threadfin ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
 msg_info "Updating $APP"
 systemctl stop threadfin.service
-wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/latest/download/Threadfin_linux_amd64'
+wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/download/1.2.2/Threadfin_linux_amd64'
 chmod +x /opt/threadfin/threadfin
 systemctl start threadfin.service
 msg_ok "Updated $APP"
